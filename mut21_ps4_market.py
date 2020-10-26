@@ -16,6 +16,11 @@ ps4_87 = 'https://www.muthead.com/21/players/?overall__gte=87&overall__lte=87&pr
 ps4_88 = 'https://www.muthead.com/21/players/?overall__gte=88&overall__lte=88&price_platform=2&sort_by=summary_price'
 ps4_89 = 'https://www.muthead.com/21/players/?overall__gte=89&overall__lte=89&price_platform=2&sort_by=summary_price'
 
+ps4_90 = 'https://www.muthead.com/21/players/?overall__gte=90&overall__lte=91&price_platform=2&sort_by=summary_price'
+ps4_91 = 'https://www.muthead.com/21/players/?overall__gte=91&overall__lte=91&price_platform=2&sort_by=summary_price'
+
+most_feared_ = 'https://www.muthead.com/21/players/?overall__gte=92&program=176&sort_by=summary_price'
+
 
 print("Search in progress...")
 
@@ -31,7 +36,7 @@ def getRequest(cardOvr, ovr):
 
     print(str(ovr) + "-> " + cheapest_player_name.string + " \t" + cheapest_player_price.string + " " + cheapest_player_info.string)
 
-
+getRequest(most_feared_, 92)
 getRequest(ps4_80, 80)
 getRequest(ps4_81, 81)
 # getRequest(ps4_82, 82)
@@ -42,3 +47,5 @@ getRequest(ps4_86, 86)
 # getRequest(ps4_87, 87)
 getRequest(ps4_88, 88)
 getRequest(ps4_89, 89)
+getRequest(ps4_90, 90)
+getRequest(ps4_91, 91)
