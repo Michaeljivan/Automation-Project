@@ -20,7 +20,7 @@ ps4_91 = 'https://www.muthead.com/21/players/?overall__gte=91&overall__lte=91&pr
 ps4_92 = 'https://www.muthead.com/21/players/?overall__gte=92&overall__lte=92&price_platform=2&sort_by=summary_price'
 ps4_93 = 'https://www.muthead.com/21/players/?overall__gte=93&overall__lte=93&price_platform=2&sort_by=summary_price'
 
-most_feared_ = 'https://www.muthead.com/21/players/?overall__gte=90&overall__lte=90&price_platform=2&program=176&sort_by=name'
+most_feared_ = 'https://www.muthead.com/21/players/?overall__gte=85&overall__lte=92&price_platform=2&program=176&sort_by=summary_price'
 
 
 # print("Search in progress...")
@@ -40,7 +40,7 @@ def getRequest(cardOvr, ovr):
 ovr_request = input("Enter Ovr or string: ")
 print("Finding cheapest " + ovr_request + "\n")
 if(ovr_request == 'most feared'):
-    getRequest(most_feared_, 90)
+    getRequest(most_feared_, 0)
 elif(ovr_request == '80'):
     getRequest(ps4_80, 80)  
 elif(ovr_request == '81'):
